@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title>MariMainPiano</title>
+		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+		<link rel = "stylesheet" type = "text/css" href = "style.css" >
+		<script type="application/x-javascript" src="jquery-2.1.4.min.js"></script>
+		<script type="application/x-javascript" src="pianoPlay.js"></script>
+	<script type="application/x-javascript">
+function pageLoad(){
+	var checkboxes = document.getElementsByTagName('input');
+
+	for (var i=0;i<checkboxes.length;i++)  {
+	if (checkboxes[i].type == 'checkbox')   {
+		checkboxes[i].checked = false;
+		}
+	}
+}
+window.onload = pageLoad;
+	</script>
+	</head>
+<body>
+	<div class = "container">
+		<div class="display">
+			<div class="output-key">
+			<table>
+				<tr id=1>
+				<td>C</td>
+				</tr>
+				<tr id=2>
+				<td>C#/Db</td>
+				</tr>
+				<tr id=3>
+				<td>D</td>
+				</tr>
+				<tr id=4>
+				<td>D#/Eb</td>
+				</tr>
+				<tr id=5>
+				<td>E</td>
+				</tr>
+				<tr id=6>
+				<td>F</td>
+				</tr>
+				<tr id=7>
+				<td>F#/Gb</td>
+				</tr>
+				<tr id=8>
+				<td>G</td>
+				</tr>
+				<tr id=9>
+				<td>G#/Ab</td>
+				</tr>
+				<tr id=10>
+				<td>A</td>
+				</tr>
+				<tr id=11>
+				<td>A#/Bb</td>
+				</tr>
+				<tr id=12>
+				<td>B</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		<div class="sidebar" >
+		<table>
+			<tr>
+			<td>
+			<label for="Keys">key display</label>
+			<label class="myCheckbox">
+				<input type="checkbox" id="Keys">
+				<span></span>
+			</label>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<label for="Input-type">keyboard input</label>
+			<label class="myCheckbox">
+				<input type="checkbox" id="Input-type">
+				<span></span>
+			</label>
+			</td>
+			</tr>
+		</table>
+		</div>
+		<div class = "input-tuts">
+			<span class="white" id="C2"></span>
+			<span class="white" id="D2"></span>
+			<span class="white" id="E2"></span>
+			<span class="white" id="F2"></span>
+			<span class="white" id="G2"></span>
+			<span class="white" id="A2"></span>
+			<span class="white" id="B2"></span>
+			<span class="white" id="C3"></span>
+			<span class="white" id="D3"></span>
+			<span class="white" id="E3"></span>
+			<span class="white" id="F3"></span>
+			<span class="white" id="G3"></span>
+			<span class="white" id="A3"></span>	
+			<span class="white" id="B3"></span>
+			<span class="white" id="C4"></span>
+			
+			<span class="black" id="Csharp2"></span>
+			<span class="black" id="Dsharp2"></span>
+			<span class="black" id="Fsharp2"></span>
+			<span class="black" id="Gsharp2"></span>
+			<span class="black" id="Asharp2"></span>
+			<span class="black" id="Csharp3"></span>
+			<span class="black" id="Dsharp3"></span>
+			<span class="black" id="Fsharp3"></span>
+			<span class="black" id="Gsharp3"></span>
+			<span class="black" id="Asharp3"></span>
+		</div>
+	</div>
+</body>
+</html> 
