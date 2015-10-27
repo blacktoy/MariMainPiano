@@ -1,10 +1,14 @@
 {
-  "name": "marimainpiano_v0-1-2",
   "title": "MariMainPiano",
-  "id": "jid1-QuEYtTdJybC7Ng",
-  "description": "MariMainPiano is a musical instrument substitute in form off browser extension for entertainment use. The toolbar will open up a new tab web application page which with a click of a mouse on a piano tuts will play a key note. This also support display of which key note that the mouse click so we can learn and memorize the input of actual piano but it will not active if the keyboard binding is activated as if it is, it will display a lot of key considering the multiple press if we decide to activate the keyboard input support. Viciously pressing keyboard might break the binding and you have to close the tab or restart the firefox window in order to normalize again. Thus, to activate the keyboard input just click on keyboard input button (checkbox) so it turns green and then click each of the piano key tuts that you wanted to activate with keyboard input (I still don't know how to activate it in an instance after I checked the keyboard input without clicking each of the tuts). The keyboard binding input is divided in two line of ANSI keyboard, 'Q' to ']' for lower notes and '`' to '=' for higher notes.",
+  "name": "marimainpiano",
+  "version": "1.4.3",
+  "id": "jid1-QuEYtTdJybC7Ng@jetpack",
+  "description": "MariMainPiano is a musical instrument substitute in form of browser extension",
+  "main": "index.js",
   "author": "Bakti Karnoaji",
-  "license": "MPL 2.0",
-  "version": "0.1.2",
-  "icon": "data/piano-icon64.png"
+  "permissions": {"private-browsing": true},
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MPL 2.0"
 }

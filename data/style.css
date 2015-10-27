@@ -1,29 +1,35 @@
-
+body{
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
 .container {
 	width : 670px;
 	height: 220px;
 	border : 5px solid #B3B3B3;
-	margin : 3px;
+	margin-right : 3px;
+	margin-left: 3px;
 	background-color: black;
 	border-radius: 10px;
 	box-shadow: 3px 3px 3px 3px #B2B2B2;
 	/*to get centered */
 	top : 50%;
-	left : 50%;
+	left : 49%;
 	position :fixed;
 	transform : translate(-50%, -50%);
-	z-index: 1;
+	
 }
 
 .display{
-	width: 150px;
-	height:70px;
-	border: 3px solid #4C0000;
-	border-bottom-style: dotted;
-	top: -30%;
+	width: 100px;
+	height:50px;
+	border: 3px solid #9C0000;
+	border-bottom-style: double;
+	top: 15%;
 	left: 50%;
-	position: fixed;
+	position: absolute;
 	transform : translate(-50%, -50%);
+	overflow: hidden;
 }
 
 .output-key {
@@ -33,7 +39,7 @@
 
 .output-key tr{
 	font: 20px  "Trebuchet MS", sans-serif;
-	color: #FF0000;
+	color: #66FFFF;
 	border: 2px solid;
 	display: none;
 }
@@ -46,11 +52,11 @@
 
 .sidebar label{
 	padding: 2px;
-	font: small consolas, monospace;
-	color: white;
+	font: small Consolas, monospace;
+	color: #FFFFFF;
 }
 
-.myCheckbox input {
+.myCheckbox input{
     display: none;
 }
 
@@ -85,6 +91,21 @@
 	display: block;
 }
 
+.finger-print{
+	display: none;
+	position: absolute;
+	margin: 3px;
+	padding-top: 2px;
+	bottom: 6px;
+	background-color: #FFCC22;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	opacity: 0.7;
+	font: 15px sans-serif;
+	text-align: center;
+}
+
 .white/*, #C2, #D2, #E2, #F2, #G2, #A2, #B2, #C3, #D3, #E3, #F3, #G3, #A3, #B3, #C4*/{
 	background-color : #FFFFC4;
 	width: 6.6%;
@@ -93,6 +114,7 @@
 	box-sizing:border-box;
 	box-shadow: 4px 4.5px 3px #4D4D4D;
 	border-radius: 3px;
+	clear: right;
 }
 
 .white:active{
