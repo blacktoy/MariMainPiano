@@ -12,5 +12,5 @@ Attribution Noncommercial: http://creativecommons.org/licenses/by-nc/3.0/
 
 About addon
 -----------
-converted and rename the sound from aiff format to wav by blacktoy for this particular add-on
+convert, compress and rename the sound from aiff format to wav by blacktoy for this particular add-on
 https://github.com/blacktoy

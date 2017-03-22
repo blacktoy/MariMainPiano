@@ -1,10 +1,1999 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-	<head>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="piano16.png" />
+	<title>MariMainPiano</title>
+	<style>
+	table, th, td {
+   		border: 1px solid black;
+	}
+	.key-container{
+		height: 63px;
+		width: 440px;
+		margin: 7px;
+	}
+	.key-container1{
+		height: 160px;
+		width: 480px;
+		margin: 7px;
+	}
+	span{
+		float: left;
+		display: inline-block;
+		width: 28px;
+		height: 28px;
+		border: 1px solid black;
+		font: 10px lucida, monospace;
+		text-align: center;
+		margin: 1px;
+		cursor: pointer;
+	}
 
-	</head>
-	<body>
-		<h1>Help page</h1>
+	.low{
+		margin-left: 33px;
+	}
+	.high1 span{
+		background-color: red;
+	}
+	.low1 span{
+		background-color: orange;
+	}
+	#tab1{
+		width: 41px;
+	}
+	.low2 span{
+		width: 33px;
+	}
 
-	</body>
+	#backspace1{
+		width: auto;
+	}
+	#caps1{
+		width:49px;
+	}
+	#shift1{
+		width: 73px;
+	}
+	#enter1{
+		width: 65px;
+	}
+	#space{
+		width:211px;
+	}
+	
+	#higher{
+		width:15px;
+		height: 15px;
+		background-color: red;
+	}
+
+	#lower{
+		width:15px;
+		height: 15px;
+		background-color: orange;
+	}
+
+	</style>
+</head>
+<body>
+<h1>Help page</h1>
+<ul>
+	<li>How To</li>
+	<p>Click on the toolbar addon and click on the MariMainPiano dropdown panel menu and it will open a piano window. There are two way to play this. One, is using the mouse to click one by one at the piano note interface. Two, is using the computer keyboard binding.<p>
+	<p>Notice in MariMainPiano addon window there is two grey circular checkboxes with label of each one of it in the left corner of the screen. The key display labeled is for displaying what tone or note is the piano when we click one of them. The keyboard input labeled is to activate the keyboard binding with the piano note. To Activate this feature just click on one of the grey circle next to the label so it turns green.</p>
+	<table>
+	<tr>
+		<th>
+			<img src="checkboxes1.png" alt="uncheck"/>
+		</th>
+		<th>
+			<img src="checkboxes2.png" alt="checked"/>
+		</th>
+	</tr>
+	<tr>
+		<td>
+			uncheck
+		</td>
+		<td>
+			checked
+		</td>
+	</tr>
+	</table>
+	<p>After keyboard input has been checked/activate just press on your computer keyboard to see how it works. The following input are describe in the picture.</p>
+<fieldset>
+<div class="key-container1">
+	<div>
+	<div class="high1">
+		<span title="C"><div>~</div>
+			<div>`</div>
+		</span>
+		<span title="C#"><div>!</div>
+			<div>1</div>
+		</span>
+		<span title="D"><div>@</div>
+			<div>2</div>
+		</span>
+		<span title="D#"><div>#</div>
+			<div>3</div>
+		</span>
+		<span title="E"><div>$</div>
+			<div>4</div>
+		</span>
+		<span title="F"><div>%</div>
+			<div>5</div>
+		</span>
+		<span title="F#"><div>^</div>
+			<div>6</div>
+		</span>
+		<span title="G"><div>&</div>
+			<div>7</div>
+		</span>
+		<span title="G#"><div>*</div>
+			<div>8</div>
+		</span>
+		<span title="A"><div>(</div>
+			<div>9</div>
+		</span>
+		<span title="A#"><div>)</div>
+			<div>0</div>
+		</span>
+		<span title="B"><div>_</div>
+			<div>-</div>
+		</span>
+		<span title="C"><div>+</div>
+			<div>=</div>
+		</span>
+	</div>
+		<span id="backspace1"><div>Backspace</div></span>
+	</div>
+	<div>
+		<span id="tab1"><div>Tab</div></span>
+	<div class="low1">
+		<span title="C"><div>Q</div></span>
+		<span title="C#"><div>W</div></span>
+		<span title="D"><div>E</div></span>
+		<span title="D#"><div>R</div></span>
+		<span title="E"><div>T</div></span>
+		<span title="F"><div>Y</div></span>
+		<span title="F#"><div>U</div></span>
+		<span title="G"><div>I</div></span>
+		<span title="G#"><div>O</div></span>
+		<span title="A"><div>P</div></span>
+		<span title="A#"><div>{</div>
+			<div>[</div>
+		</span>
+		<span title="B"><div>}</div>
+			<div>]</div>
+		</span>
+	</div>
+		<span id="tab1"><div>|</div>
+			<div>\</div>
+		</span>
+	</div>
+	<div>
+		<span id="caps1"><div>Caps Lock</div></span>
+		<span><div>A</div></span>
+		<span><div>S</div></span>
+		<span><div>D</div></span>
+		<span><div>F</div></span>
+		<span><div>G</div></span>
+		<span><div>H</div></span>
+		<span><div>J</div></span>
+		<span><div>K</div></span>
+		<span><div>L</div></span>
+		<span><div>:</div>
+			<div>;</div></span>
+		<span><div>"</div>
+			<div>'</div>
+		</span>
+		<span id="enter1"><div>Enter</div></span>
+	</div>
+	<div>
+		<span id="shift1"><div>Shift</div></span>
+		<span><div>Z</div></span>
+		<span><div>X</div></span>
+		<span><div>C</div></span>
+		<span><div>V</div></span>
+		<span><div>B</div></span>
+		<span><div>N</div></span>
+		<span><div>M</div></span>
+		<span><div><</div>
+			<div>,</div></span>
+		<span><div>></div>
+			<div>.</div></span>
+		<span><div>?</div>
+			<div>/</div></span>
+		<span id="shift1"><div>Shift</div>
+		</span>
+	</div>
+	<div class="low2">
+		<span id="ctrl1"><div>Ctrl</div></span>
+		<span><div>cmd</div></span>
+		<span><div>Alt</div></span>
+		<span id="space"><div>Space</div></span>
+		<span><div>Alt</div></span>
+		<span><div>cmd</div></span>
+		<span><div>Select</div></span>
+		<span><div>Ctrl</div></span>
+	</div>
+</div>
+
+	<div id="higher"></div><label for="higher">High notes</label>
+	<div id="lower"></div><label for="lower">Low notes</label>
+</fieldset>
+<br/>
+	<li>Piano Chord</li>
+	<p>The chord is consist of three main musical note or more. And in order play them we should press more than one piano tone simultaneously. It is impossible to achieve this without activating the keyboard input so we should <em>activate the keyboard input</em>. Keep in mind that we play this in a computer keyboard environment so do not expect it would be as playable or produce great sound as the actual piano or in par.</p>
+	<br/>
+	<table>
+		<tr>
+			<th>
+				CHORD
+			</th>
+			<th>
+				major
+			</th>
+			<th>
+				minor
+			</th>
+		</tr>
+		<tr>
+			<td>
+				C
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<div class="high1">
+						<span><div>~</div>
+							<div>`</div>
+						</span></div>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<div class="high1">
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						</div>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<div class="high1">
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						</div>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<div class="high1">
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+						</div>
+					</div>
+					<div class="low">
+						<div class="low1"><span><div>Q</div></span></div>
+						<span><div>W</div></span>
+						<span><div>E</div></span>
+						<span><div>R</div></span>
+						<div class="low1"><span><div>T</div></span></div>
+						<span><div>Y</div></span>
+						<span><div>U</div></span>
+						<div class="low1"><span><div>I</div></span></div>
+						<span><div>O</div></span>
+						<span><div>P</div></span>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+					<div class="high1">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+					</div>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+					<div class="high1">
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+					</div>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+					<div class="high1">
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+					</div>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<div class="high1">
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+						</div>
+					</div>
+					<div class="low">
+						<div class="low1"><span><div>Q</div></span></div>
+						<span><div>W</div></span>
+						<span><div>E</div></span>
+						<div class="low1"><span><div>R</div></span></div>
+						<span><div>T</div></span>
+						<span><div>Y</div></span>
+						<span><div>U</div></span>
+						<div class="low1"><span><div>I</div></span></div>
+						<span><div>O</div></span>
+						<span><div>P</div></span>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				C#/Db
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+					<div class="high1">
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+					</div>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+					<div class="high1">
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+					</div>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+					<div class="high1">
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+					</div>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<div class="low1"><span><div>W</div></span></div>
+						<span><div>E</div></span>
+						<span><div>R</div></span>
+						<span><div>T</div></span>
+						<div class="low1"><span><div>Y</div></span></div>
+						<span><div>U</div></span>
+						<span><div>I</div></span>
+						<div class="low1"><span><div>O</div></span></div>
+						<span><div>P</div></span>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+					<div class="high1">
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+					</div>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+					<div class="high1">
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+					</div>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+					<div class="high1">
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+					</div>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<div class="low1"><span><div>W</div></span></div>
+						<span><div>E</div></span>
+						<span><div>R</div></span>
+						<div class="low1"><span><div>T</div></span></div>
+						<span><div>Y</div></span>
+						<span><div>U</div></span>
+						<span><div>I</div></span>
+						<div class="low1"><span><div>O</div></span></div>
+						<span><div>P</div></span>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				D
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+					<div class="high1">
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+					</div>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+					<div class="high1">
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+					</div>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+					<div class="high1">
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+					</div>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<span><div>W</div></span>
+						<div class="low1"><span><div>E</div></span></div>
+						<span><div>R</div></span>
+						<span><div>T</div></span>
+						<span><div>Y</div></span>
+						<div class="low1"><span><div>U</div></span></div>
+						<span><div>I</div></span>
+						<span><div>O</div></span>
+						<div class="low1"><span><div>P</div></span></div>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+					<div class="high1">
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+					</div>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+					<div class="high1">
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+					</div>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+					<div class="high1">
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+					</div>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<span><div>W</div></span>
+						<div class="low1"><span><div>E</div></span></div>
+						<span><div>R</div></span>
+						<span><div>T</div></span>
+						<div class="low1"><span><div>Y</div></span></div>
+						<span><div>U</div></span>
+						<span><div>I</div></span>
+						<span><div>O</div></span>
+						<div class="low1"><span><div>P</div></span></div>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				D#/Eb
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+					<div class="high1">
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+					</div>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+					<div class="high1">
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+					</div>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+					<div class="high1">
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+					</div>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<span><div>W</div></span>
+						<span><div>E</div></span>
+						<div class="low1"><span><div>R</div></span></div>
+						<span><div>T</div></span>
+						<span><div>Y</div></span>
+						<span><div>U</div></span>
+						<div class="low1"><span><div>I</div></span></div>
+						<span><div>O</div></span>
+						<span><div>P</div></span>
+						<div class="low1"><span><div>{</div>
+							<div>[</div>
+						</span>
+						</div>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+					<div class="high1">
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+					</div>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+					<div class="high1">
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+					</div>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+					<div class="high1">
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+					</div>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<span><div>W</div></span>
+						<span><div>E</div></span>
+						<div class="low1"><span><div>R</div></span></div>
+						<span><div>T</div></span>
+						<span><div>Y</div></span>
+						<div class="low1"><span><div>U</div></span></div>
+						<span><div>I</div></span>
+						<span><div>O</div></span>
+						<span><div>P</div></span>
+						<div class="low1"><span><div>{</div>
+							<div>[</div>
+						</span>
+						</div>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				E
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+					<div class="high1">
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+					</div>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+					<div class="high1">
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+					</div>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+					<div class="high1">
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+					</div>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<span><div>W</div></span>
+						<span><div>E</div></span>
+						<span><div>R</div></span>
+						<div class="low1"><span><div>T</div></span></div>
+						<span><div>Y</div></span>
+						<span><div>U</div></span>
+						<span><div>I</div></span>
+						<div class="low1"><span><div>O</div></span></div>
+						<span><div>P</div></span>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<div class="low1">
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+						</div>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+					<div class="high1">
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+					</div>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+					<div class="high1">
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+					</div>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+					<div class="high1">
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+					</div>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<span><div>W</div></span>
+						<span><div>E</div></span>
+						<span><div>R</div></span>
+						<div class="low1"><span><div>T</div></span></div>
+						<span><div>Y</div></span>
+						<span><div>U</div></span>
+						<div class="low1"><span><div>I</div></span></div>
+						<span><div>O</div></span>
+						<span><div>P</div></span>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<div class="low1">
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				F
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+					<div class="high1">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+					</div>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+					<div class="high1">
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+					</div>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+					<div class="high1">
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+					</div>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+					<div class="high1">
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					</div>
+					<div class="low">
+						<div class="low1"><span><div>Q</div></span></div>
+						<span><div>W</div></span>
+						<span><div>E</div></span>
+						<span><div>R</div></span>
+						<span><div>T</div></span>
+						<div class="low1"><span><div>Y</div></span></div>
+						<span><div>U</div></span>
+						<span><div>I</div></span>
+						<span><div>O</div></span>
+						<div class="low1"><span><div>P</div></span></div>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+					<div class="high1">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+					</div>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+					<div class="high1">
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+					</div>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+					<div class="high1">
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+					</div>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+					<div class="high1">
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					</div>
+					<div class="low">
+						<div class="low1"><span><div>Q</div></span></div>
+						<span><div>W</div></span>
+						<span><div>E</div></span>
+						<span><div>R</div></span>
+						<span><div>T</div></span>
+						<div class="low1"><span><div>Y</div></span></div>
+						<span><div>U</div></span>
+						<span><div>I</div></span>
+						<div class="low1"><span><div>O</div></span></div>
+						<span><div>P</div></span>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				F#/Gb
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+					<div class="high1">
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+					</div>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+					<div class="high1">
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+					</div>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+					<div class="high1">
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+					</div>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<div class="low1"><span><div>W</div></span></div>
+						<span><div>E</div></span>
+						<span><div>R</div></span>
+						<span><div>T</div></span>
+						<span><div>Y</div></span>
+						<div class="low1"><span><div>U</div></span></div>
+						<span><div>I</div></span>
+						<span><div>O</div></span>
+						<span><div>P</div></span>
+						<div class="low1">
+							<span><div>{</div>
+							<div>[</div>
+						</span>
+						</div>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+					<div class="high1">
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+					</div>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+					<div class="high1">
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+					</div>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+					<div class="high1">
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+					</div>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<div class="low1"><span><div>W</div></span></div>
+						<span><div>E</div></span>
+						<span><div>R</div></span>
+						<span><div>T</div></span>
+						<span><div>Y</div></span>
+						<div class="low1"><span><div>U</div></span></div>
+						<span><div>I</div></span>
+						<span><div>O</div></span>
+						<div class="low1"><span><div>P</div></span></div>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				G
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+					<div class="high1">
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+					</div>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+					<div class="high1">
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+					</div>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+					<div class="high1">
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+					</div>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<span><div>W</div></span>
+						<div class="low1"><span><div>E</div></span></div>
+						<span><div>R</div></span>
+						<span><div>T</div></span>
+						<span><div>Y</div></span>
+						<span><div>U</div></span>
+						<div class="low1"><span><div>I</div></span></div>
+						<span><div>O</div></span>
+						<span><div>P</div></span>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<div class="low1">
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+						</div>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+					<div class="high1">
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+					</div>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+					<div class="high1">
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+					</div>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+					<div class="high1">
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+					</div>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<span><div>W</div></span>
+						<div class="low1"><span><div>E</div></span></div>
+						<span><div>R</div></span>
+						<span><div>T</div></span>
+						<span><div>Y</div></span>
+						<span><div>U</div></span>
+						<div class="low1"><span><div>I</div></span></div>
+						<span><div>O</div></span>
+						<span><div>P</div></span>
+						<div class="low1">
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						</div>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				G#/Ab
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+					<div class="high1">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+					</div>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+					<div class="high1">
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+					</div>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+					<div class="high1">
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+					</div>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+					<div class="high1">
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					</div>
+					<div class="low">
+						<div class="low1"><span><div>Q</div></span></div>
+						<span><div>W</div></span>
+						<span><div>E</div></span>
+						<div class="low1"><span><div>R</div></span></div>
+						<span><div>T</div></span>
+						<span><div>Y</div></span>
+						<span><div>U</div></span>
+						<span><div>I</div></span>
+						<div class="low1"><span><div>O</div></span></div>
+						<span><div>P</div></span>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+					<div class="high1">
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+					</div>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+					<div class="high1">
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+					</div>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<span><div>W</div></span>
+						<span><div>E</div></span>
+						<div class="low1"><span><div>R</div></span></div>
+						<span><div>T</div></span>
+						<span><div>Y</div></span>
+						<span><div>U</div></span>
+						<span><div>I</div></span>
+						<div class="low1"><span><div>O</div></span></div>
+						<span><div>P</div></span>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<div class="low1">
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				A
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+					<div class="high1">
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+					</div>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+					<div class="high1">
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+					</div>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+					<div class="high1">
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+					</div>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<div class="low1"><span><div>W</div></span></div>
+						<span><div>E</div></span>
+						<span><div>R</div></span>
+						<div class="low1"><span><div>T</div></span></div>
+						<span><div>Y</div></span>
+						<span><div>U</div></span>
+						<span><div>I</div></span>
+						<span><div>O</div></span>
+						<div class="low1"><span><div>P</div></span></div>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+					<div class="high1">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+					</div>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+					<div class="high1">
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+					</div>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+					<div class="high1">
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+					</div>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+					<div class="high1">
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					</div>
+					<div class="low">
+						<div class="low1"><span><div>Q</div></span></div>
+						<span><div>W</div></span>
+						<span><div>E</div></span>
+						<span><div>R</div></span>
+						<div class="low1"><span><div>T</div></span></div>
+						<span><div>Y</div></span>
+						<span><div>U</div></span>
+						<span><div>I</div></span>
+						<span><div>O</div></span>
+						<div class="low1"><span><div>P</div></span></div>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				A#/Bb
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+					<div class="high1">
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+					</div>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+					<div class="high1">
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+					</div>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+					<div class="high1">
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+					</div>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<span><div>W</div></span>
+						<div class="low1"><span><div>E</div></span></div>
+						<span><div>R</div></span>
+						<span><div>T</div></span>
+						<div class="low1"><span><div>Y</div></span></div>
+						<span><div>U</div></span>
+						<span><div>I</div></span>
+						<span><div>O</div></span>
+						<span><div>P</div></span>
+						<div class="low1">
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						</div>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+					<div class="high1">
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+					</div>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+					<div class="high1">
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+					</div>
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+					<div class="high1">
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+					</div>
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<div class="low1"><span><div>W</div></span></div>
+						<span><div>E</div></span>
+						<span><div>R</div></span>
+						<span><div>T</div></span>
+						<div class="low1"><span><div>Y</div></span></div>
+						<span><div>U</div></span>
+						<span><div>I</div></span>
+						<span><div>O</div></span>
+						<span><div>P</div></span>
+						<div class="low1">
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						</div>
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				B
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+					<div class="high1">
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+					</div>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+					<div class="high1">
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+					</div>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+					<div class="high1">
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+					</div>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<span><div>W</div></span>
+						<span><div>E</div></span>
+						<div class="low1"><span><div>R</div></span></div>
+						<span><div>T</div></span>
+						<span><div>Y</div></span>
+						<div class="low1"><span><div>U</div></span></div>
+						<span><div>I</div></span>
+						<span><div>O</div></span>
+						<span><div>P</div></span>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<div class="low1">
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+						</div>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="key-container">
+					<div class="high">
+						<span><div>~</div>
+							<div>`</div>
+						</span>
+						<span><div>!</div>
+							<div>1</div>
+						</span>
+					<div class="high1">
+						<span><div>@</div>
+							<div>2</div>
+						</span>
+					</div>
+						<span><div>#</div>
+							<div>3</div>
+						</span>
+						<span><div>$</div>
+							<div>4</div>
+						</span>
+						<span><div>%</div>
+							<div>5</div>
+						</span>
+					<div class="high1">
+						<span><div>^</div>
+							<div>6</div>
+						</span>
+					</div>
+						<span><div>&</div>
+							<div>7</div>
+						</span>
+						<span><div>*</div>
+							<div>8</div>
+						</span>
+						<span><div>(</div>
+							<div>9</div>
+						</span>
+						<span><div>)</div>
+							<div>0</div>
+						</span>
+					<div class="high1">
+						<span><div>_</div>
+							<div>-</div>
+						</span>
+					</div>
+						<span><div>+</div>
+							<div>=</div>
+						</span>
+					</div>
+					<div class="low">
+						<span><div>Q</div></span>
+						<span><div>W</div></span>
+						<div class="low1"><span><div>E</div></span></div>
+						<span><div>R</div></span>
+						<span><div>T</div></span>
+						<span><div>Y</div></span>
+						<div class="low1"><span><div>U</div></span></div>
+						<span><div>I</div></span>
+						<span><div>O</div></span>
+						<span><div>P</div></span>
+						<span><div>{</div>
+							<div>[</div>
+						</span>
+						<div class="low1">
+						<span><div>}</div>
+							<div>]</div>
+						</span>
+						</div>
+					</div>
+				</div>
+				
+			</td>
+		</tr>
+	</table>
+<br/>		
+	<li id="about">About</li>
+<br/>
+	<details>
+		<p>MariMainPiano ver. 1.4.9</p>
+	</details>
+</ul>
+
+</body>
 </html>

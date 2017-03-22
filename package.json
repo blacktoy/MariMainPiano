@@ -1,8 +1,9 @@
 {
   "title": "MariMainPiano",
   "name": "marimainpiano",
-  "version": "1.4.3",
+  "version": "1.4.9",
   "id": "jid1-QuEYtTdJybC7Ng@jetpack",
+  "icon": "resource://jid1-QuEYtTdJybC7Ng-at-jetpack/data/piano48.png",
   "description": "MariMainPiano is a musical instrument substitute in form of browser extension",
   "main": "index.js",
   "author": "Bakti Karnoaji",

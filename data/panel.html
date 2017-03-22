@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="application/x-javascript">
+		var openWin = function(){
+			addon.port.emit("newWindow");
+		}
+
+		var openHelp = function(){
+			addon.port.emit("helpTab");
+		}
+		</script>
+		<style>
+		body{
+			-moz-user-select: none;
+			-khtml-user-select: none;
+			-webkit-user-select: none;
+		}
+		.menu-list{
+		    display: flex;
+		    flex-wrap: wrap;
+		    align-items: center;
+		    text-align: center;
+		    font-size: 12px;
+		}
+		.menu-list div{
+			background-color: #B0D0F0;
+			cursor: pointer;
+			padding: 4px;
+			margin: 1px;
+			width: 86%;
+			height: 35%;
+		}
+		.menu-list div:hover{
+			background-color: #B0DCF8;
+		}
+		</style>
+	</head>
+	<body>
+	<div class="menu-list">
+		<div onclick="openWin()">MariMainPiano</div>
+		<div onclick="openHelp()">Help page</div>
+	</div>
+	</body>
+</html>

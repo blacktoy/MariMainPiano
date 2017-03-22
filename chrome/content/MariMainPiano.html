@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title></title>
+		<link rel ="stylesheet" type="text/css" href="chrome://marimainpiano/skin/style.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+
+		<script type="application/x-javascript" src="pianoPlay.js"></script>
+	<script type="application/x-javascript">
+function pageLoad(){
+	var checkboxes = document.getElementsByTagName('input');
+
+	for (var i=0;i<checkboxes.length;i++)  {
+	if (checkboxes[i].type == 'checkbox')   {
+		checkboxes[i].checked = false;
+		}
+	}
+}
+window.onload = pageLoad;
+	</script>
+	</head>
+<body>
+	<div class = "container">
+		<div class="leftbar" >
+			<label for="volRange">volume:</label><br />
+			<input type="range" id="volRange" max="1" min="0" step="0.01" />
+
+		</div>
+		<div class="display">
+			<div class="output-key">
+			<table>
+				<tr id="1">
+				<td>C</td>
+				</tr>
+				<tr id="2">
+				<td>C#/Db</td>
+				</tr>
+				<tr id="3">
+				<td>D</td>
+				</tr>
+				<tr id="4">
+				<td>D#/Eb</td>
+				</tr>
+				<tr id="5">
+				<td>E</td>
+				</tr>
+				<tr id="6">
+				<td>F</td>
+				</tr>
+				<tr id="7">
+				<td>F#/Gb</td>
+				</tr>
+				<tr id="8">
+				<td>G</td>
+				</tr>
+				<tr id="9">
+				<td>G#/Ab</td>
+				</tr>
+				<tr id="10">
+				<td>A</td>
+				</tr>
+				<tr id="11">
+				<td>A#/Bb</td>
+				</tr>
+				<tr id="12">
+				<td>B</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		<div class="sidebar" >
+		<table>
+			<tr>
+			<td>
+			<label for="Keys">key display</label>
+			<label class="myCheckbox">
+				<input type="checkbox" id="Keys">
+				<span></span>
+			</label>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<label for="Input-type">keyboard input</label>
+			<label class="myCheckbox">
+				<input type="checkbox" id="Input-type">
+				<span></span>
+			</label>
+			</td>
+			</tr>
+		</table>
+		</div>
+		<div class = "input-tuts" onmousedown="pressElement(event);" onkeydown="detectKey(event);">
+			<span class="white" id="C2"><div class="finger-print" id="notc2">C</div></span>
+			<span class="white" id="D2"><div class="finger-print" id="notd2">D</div></span>
+			<span class="white" id="E2"><div class="finger-print" id="note2">E</div></span>
+			<span class="white" id="F2"><div class="finger-print" id="notf2">F</div></span>
+			<span class="white" id="G2"><div class="finger-print" id="notg2">G</div></span>
+			<span class="white" id="A2"><div class="finger-print" id="nota2">A</div></span>
+			<span class="white" id="B2"><div class="finger-print" id="notb2">B</div></span>
+			<span class="white" id="C3"><div class="finger-print" id="notc3">C</div></span>
+			<span class="white" id="D3"><div class="finger-print" id="notd3">D</div></span>
+			<span class="white" id="E3"><div class="finger-print" id="note3">E</div></span>
+			<span class="white" id="F3"><div class="finger-print" id="notf3">F</div></span>
+			<span class="white" id="G3"><div class="finger-print" id="notg3">G</div></span>
+			<span class="white" id="A3"><div class="finger-print" id="nota3">A</div></span>	
+			<span class="white" id="B3"><div class="finger-print" id="notb3">B</div></span>
+			<span class="white" id="C4"><div class="finger-print" id="notc4">C</div></span>
+			
+			<span class="black" id="Csharp2"><div class="finger-print" id="notcsharp2">C#</div></span>
+			<span class="black" id="Dsharp2"><div class="finger-print" id="notdsharp2">D#</div></span>
+			<span class="black" id="Fsharp2"><div class="finger-print" id="notfsharp2">F#</div></span>
+			<span class="black" id="Gsharp2"><div class="finger-print" id="notgsharp2">G#</div></span>
+			<span class="black" id="Asharp2"><div class="finger-print" id="notasharp2">A#</div></span>
+			<span class="black" id="Csharp3"><div class="finger-print" id="notcsharp3">C#</div></span>
+			<span class="black" id="Dsharp3"><div class="finger-print" id="notdsharp3">D#</div></span>
+			<span class="black" id="Fsharp3"><div class="finger-print" id="notfsharp3">F#</div></span>
+			<span class="black" id="Gsharp3"><div class="finger-print" id="notgsharp3">G#</div></span>
+			<span class="black" id="Asharp3"><div class="finger-print" id="notasharp3">A#</div></span>
+		</div>
+	</div>
+</body>
+</html> 
